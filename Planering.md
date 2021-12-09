@@ -1,0 +1,12 @@
+- Div container för kort delen
+- display: flex för att få de två delarna av kortet att centrera bredvid varandra
+- Grejer runt om
+  - Frimärke
+  - Andra detaljer på sidan
+- Input "skriv här" för att lägga in egen text
+  - Själva texten
+  - Från
+  - Till
+- Kanske en input för bild också
+- Snö partiklar, why not?
+- Flip funktion på kortet

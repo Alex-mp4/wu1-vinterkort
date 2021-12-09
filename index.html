@@ -8,16 +8,45 @@
     <title>Vinterkort Generator</title>
 </head>
 <body>
-    
-    <main>
 
+<main>
+    <div class="main">
         <div class="container">
-            
+            <img src="../images/card.jpg" alt="Winter Trees" class="image">
         </div>
-        <div class="container">
-            <h1>Insert text idk</h1>
+        <div class="container2">
+            <p id='result'></p>
         </div>
+    </div>
+<div class="container3">
+    <form id="form" onsubmit="return false;">
+        <label for="tname">Till:</label>
+        <input type="text" id="tname"/>
+        <input type="submit" onclick="othername();" />
+        <label for="fname">Från:</label>
+        <input type="text" id="fname"/>
+        <input type="submit" onclick="othername1();" />
+        <label for="text">Text:</label>
+        <input type="text" id="text"/>
+        <input type="submit" onclick="othername2();" />
+    </form>   
+</div>
+</main>
 
-    </main>
+<script>
+function othername() {
+    var input = document.getElementById("tname").value;
+    alert(input);
+}
+function othername1() {
+    var input = document.getElementById("fname").value;
+    alert(input);
+}
+function othername2() {
+    var input = document.getElementById("text").value;
+    alert(input);
+}
+</script>
+
 </body>
 </html>

@@ -1,11 +1,35 @@
 body {
+    background-image: url("../images/snowflake.jpg");
+    background-repeat: repeat;
     background-color: aliceblue;
+}
+
+.main {
+    display: flex;
 }
 
 .container {
     height: 18rem;
     width: 30rem;
-    border: 1px solid black;
-    display: flex;
-    margin: auto;
+    border: 5px solid red;
+    margin-left: auto;
+    background-color: white;
+}
+
+.container2 {
+    height: 18rem;
+    width: 30rem;
+    border: 5px solid green;
+    margin-right: auto;
+    text-align: center;
+    background-color: white;
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+}
+
+.container3 {
+    padding-top: 1rem;
 }

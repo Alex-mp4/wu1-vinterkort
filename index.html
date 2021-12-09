@@ -10,14 +10,22 @@
 <body>
 
 <main>
-    <div class="main">
-        <div class="container">
+
+   <div class="main">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front, front">
             <img src="../images/card.jpg" alt="Winter Trees" class="image">
+          </div>
+          <div class="flip-card-back">
+            <p id='till'></p>
+            <p id='från'></p>
+            <p id='text1'></p>
+          </div>
         </div>
-        <div class="container2">
-            <p id='result'></p>
-        </div>
+      </div>
     </div>
+
 <div class="container3">
     <form id="form" onsubmit="return false;">
         <label for="tname">Till:</label>
@@ -35,16 +43,16 @@
 
 <script>
 function othername() {
-    var input = document.getElementById("tname").value;
-    alert(input);
+    var input1 = document.getElementById("tname").value;
+    document.getElementById("till").innerHTML = input1;
 }
 function othername1() {
-    var input = document.getElementById("fname").value;
-    alert(input);
+    var input2 = document.getElementById("fname").value;
+    document.getElementById("från").innerHTML = input2;
 }
 function othername2() {
-    var input = document.getElementById("text").value;
-    alert(input);
+    var input3 = document.getElementById("text").value;
+    document.getElementById("text1").innerHTML = input3;
 }
 </script>
 

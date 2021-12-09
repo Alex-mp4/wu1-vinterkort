@@ -1,12 +1,12 @@
-- Div container för kort delen
-- display: flex för att få de två delarna av kortet att centrera bredvid varandra
+- Div container för kort delen (Fixat)
+- display: flex grejs (Fixat)
 - Grejer runt om
   - Frimärke
   - Andra detaljer på sidan
-- Input "skriv här" för att lägga in egen text
+- Input "skriv här" för att lägga in egen text (Fixat)
   - Själva texten
   - Från
   - Till
 - Kanske en input för bild också
 - Snö partiklar, why not?
-- Flip funktion på kortet
+- Flip funktion på kortet (Fixat)

@@ -6,27 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Vinterkort Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <main>
 
-   <div class="main">
+<div class="display, vertical-center">
     <div class="flip-card">
         <div class="flip-card-inner">
-          <div class="flip-card-front, front">
+          <div class="flip-card-front">
             <img src="../images/card.jpg" alt="Winter Trees" class="image">
           </div>
           <div class="flip-card-back">
+            <h1>Till:</h1>
             <p id='till'></p>
+            <h1>Från:</h1>
             <p id='från'></p>
             <p id='text1'></p>
           </div>
         </div>
       </div>
-    </div>
+</div>
 
-<div class="container3">
+
+</main>
+
+<footer>
+
+<div class="container3, main">
     <form id="form" onsubmit="return false;">
         <label for="tname">Till:</label>
         <input type="text" id="tname"/>
@@ -39,7 +49,8 @@
         <input type="submit" onclick="othername2();" />
     </form>   
 </div>
-</main>
+
+</footer>
 
 <script>
 function othername() {

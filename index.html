@@ -1,71 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Vinterkort Generator</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Vinterkort Generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Dancing+Script:wght@700&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
 
-<main>
+  <main>
 
-<div class="display, vertical-center">
-    <div class="flip-card">
+    <div class="display, vertical-center">
+      <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="../images/card.jpg" alt="Winter Trees" class="image">
+            <img src="/images/card.jpg" alt="Winter Trees" class="image">
           </div>
           <div class="flip-card-back">
             <h1>Till:</h1>
             <p id='till'></p>
             <h1>Från:</h1>
             <p id='från'></p>
+            <hr>
             <p id='text1'></p>
           </div>
         </div>
       </div>
-</div>
+    </div>
 
+    <input type="button" value="Musik" onclick="play()">
+    <audio id="audio" src="JingleBellsSynthesiaCoverMidi.mp3"></audio>
 
-</main>
+  </main>
 
-<footer>
+  <footer>
 
-<div class="container3, main">
-    <form id="form" onsubmit="return false;">
+    <div class="container3, main">
+      <form class="p" id="form" onsubmit="return false;">
         <label for="tname">Till:</label>
-        <input type="text" id="tname"/>
+        <input type="text" id="tname" />
         <input type="submit" onclick="othername();" />
         <label for="fname">Från:</label>
-        <input type="text" id="fname"/>
+        <input type="text" id="fname" />
         <input type="submit" onclick="othername1();" />
         <label for="text">Text:</label>
-        <input type="text" id="text"/>
+        <input type="text" id="text" />
         <input type="submit" onclick="othername2();" />
-    </form>   
-</div>
+      </form>
+    </div>
 
-</footer>
+  </footer>
 
-<script>
-function othername() {
-    var input1 = document.getElementById("tname").value;
-    document.getElementById("till").innerHTML = input1;
-}
-function othername1() {
-    var input2 = document.getElementById("fname").value;
-    document.getElementById("från").innerHTML = input2;
-}
-function othername2() {
-    var input3 = document.getElementById("text").value;
-    document.getElementById("text1").innerHTML = input3;
-}
-</script>
+  <script>
+    function othername() {
+      var input1 = document.getElementById("tname").value;
+      document.getElementById("till").innerHTML = input1;
+    }
+    function othername1() {
+      var input2 = document.getElementById("fname").value;
+      document.getElementById("från").innerHTML = input2;
+    }
+    function othername2() {
+      var input3 = document.getElementById("text").value;
+      document.getElementById("text1").innerHTML = input3;
+    }
+
+    function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+        audio.loop = true;
+      }
+  </script>
 
 </body>
+
 </html>

@@ -17,6 +17,8 @@
 
   <main>
 
+    <div id="particles-js"></div>
+
     <div class="display, vertical-center">
       <div class="flip-card">
         <div class="flip-card-inner">
@@ -35,12 +37,18 @@
       </div>
     </div>
 
-    <input type="button" value="Musik" onclick="play()">
-    <audio id="audio" src="JingleBellsSynthesiaCoverMidi.mp3"></audio>
-
   </main>
 
   <footer>
+
+    <br>
+
+    <div class="main">
+      <input type="button" value="Musik" onclick="play()">
+      <audio id="audio" src="JingleBellsSynthesiaCoverMidi.mp3"></audio>
+    </div>
+
+    <br>
 
     <div class="container3, main">
       <form class="p" id="form" onsubmit="return false;">
@@ -73,10 +81,10 @@
     }
 
     function play() {
-        var audio = document.getElementById("audio");
-        audio.play();
-        audio.loop = true;
-      }
+      var audio = document.getElementById("audio");
+      audio.play();
+      audio.loop = true;
+    }
   </script>
 
 </body>
